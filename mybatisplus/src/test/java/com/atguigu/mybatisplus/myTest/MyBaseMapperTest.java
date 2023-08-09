@@ -37,7 +37,7 @@ public class MyBaseMapperTest {
     public void test02(){
         User user = new User();
         user.setUserName("yyf");
-        user.setEmail("123@yyf");
+        user.setEmail("123@yyf123");
         user.setAge(233);
         int insert = userMapper.insert(user);
         System.out.println(user.getId());
