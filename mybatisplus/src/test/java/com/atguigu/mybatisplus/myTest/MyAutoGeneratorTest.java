@@ -16,7 +16,7 @@ import java.util.Collections;
 public class MyAutoGeneratorTest {
 
     public static void main(String[] args) {
-        FastAutoGenerator.create("jdbc:mysql://localhost:3306/mybatis_plus_slave?characterEncoding=utf-8&userSSL=false",
+        FastAutoGenerator.create("jdbc:mysql://localhost:3306/dockerDemo?characterEncoding=utf-8&userSSL=false",
                         "root",
                         "p2ssword")
                 .globalConfig(builder -> {
@@ -31,8 +31,8 @@ public class MyAutoGeneratorTest {
                             .pathInfo(Collections.singletonMap(OutputFile.mapperXml, "Y:\\Log\\mybatisplus")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("group") // 设置需要生成的表名
-                            .addTablePrefix("t_", "c_"); // 设置过滤表前缀
+                    builder.addInclude("t_user");// 设置需要生成的表名
+//                            .addTablePrefix("t_", "c_"); // 设置过滤表前缀
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
                 .execute();
