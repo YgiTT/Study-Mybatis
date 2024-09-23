@@ -2,7 +2,7 @@
 <!--<!DOCTYPE mapper-->
 <!--        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"-->
 <!--        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
-<!--<mapper namespace="com.atguigu.mybatisplus.mapper.UserMapper">-->
+<!--<mapper namespace="com.study.mybatisplus.mapper.UserMapper">-->
 
 <!--    &lt;!&ndash;Map<String, Object> selectMapById(Long id);&ndash;&gt;-->
 <!--    <select id="selectMapById" resultType="map">-->
