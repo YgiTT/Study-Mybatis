@@ -29,6 +29,6 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapperLocations: classpath*:/mapper/**/*.xml
   # 配置类型别名所对应的包
-  type-aliases-package: com.atguigu.mybatisplus.pojo
+  type-aliases-package: com.study.mybatisplus.pojo
   # 扫描通用枚举的包
-  type-enums-package: com.atguigu.mybatisplus.enums
+  type-enums-package: com.study.mybatisplus.enums
