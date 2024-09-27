@@ -8,7 +8,7 @@
         SELECT  * FROM  user where id = #{id}
     </select>
 
-    <select id="pageSelect" resultType="User">
+    <select id="pageSelect" resultType="com.study.mybatisplus.pojo.User">
         select * from user where age > #{age}
     </select>
 </mapper>
